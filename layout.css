@@ -1,0 +1,615 @@
+/**** forsiden ****/
+.forside_grid_1 {
+  background-color: #b17c80;
+  padding-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.forside_grid_1_2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.forside_grid_2_2 {
+  background-color: #3f1e0d;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.forside_grid_3_1 {
+  background-color: #b17c80;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.onskeliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center; /* Centrer lodret */
+  justify-items: center; /* Centrer hvert billede i sin kolonne */
+  column-gap: 10px;
+}
+
+.forside_grid_4_1 {
+  background-color: #742a25;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* Centrer lodret */
+  justify-items: center; /* Centrer hvert billede i sin kolonne */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
+/**** billeder på forsiden ****/
+.billede1 {
+  width: 120px;
+  justify-content: center;
+
+  margin-right: 4rem;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.billede2 {
+  background-image: url("/billeder/bogklub.png");
+  background-size: cover; /* Fylder hele skærmen, beskærer hvis nødvendigt */
+  background-position: center; /* Holder fokus i midten */
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.billede3 {
+  width: 100px;
+}
+.billede4 {
+  width: 100px;
+}
+.billede5 {
+  width: 100px;
+}
+
+.desktop_only {
+  display: none; /* skjul som standard */
+  width: 100px;
+}
+
+/**** tekst forside *****/
+.hvid_tekst {
+  margin-top: 2.5rem;
+  line-height: 1.5;
+}
+
+.hvid_tekst2 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+/***** slut forside ******/
+
+/***** Månedens bog *****/
+
+.bog_grid_1_2 {
+  background-color: #545932;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.bog_grid_2_2 {
+  background-color: #3f1e0d;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.bog_grid_3 {
+  background-color: #8d9362;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* Centrer lodret */
+  justify-items: center; /* Centrer hvert billede i sin kolonne */
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  gap: 2rem;
+}
+
+/**** tekst månedens bog ******/
+.hvid_tekst3 {
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+.hvid_tekst4 {
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+/***** billeder månedens bog *****/
+
+.billede6 {
+  background-image: url("/billeder/billedebaggrund.png");
+  background-size: cover; /* Fylder hele skærmen, beskærer hvis nødvendigt */
+  background-position: center; /* Holder fokus i midten */
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.billede7 {
+  background-image: url("/billeder/pige.bibliotek.jpg");
+
+  background-position: center; /* Holder fokus i midten */
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+}
+
+/**** slut månedens bog ****/
+
+/**** toplisten ******/
+
+.toplisten_grid_lyserod {
+  background-color: #b17c80;
+  padding-bottom: 2rem;
+}
+
+.toplisten_grid_hvid {
+  padding-bottom: 2rem;
+}
+
+.tekst_stjerne {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 5rem;
+}
+
+.tal_billede_tekst {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 2rem;
+}
+
+/***** toplisten billeder ******/
+.stjerner {
+  width: 125px;
+  margin-top: 2rem;
+}
+
+.billede8 {
+  width: 150px;
+  grid-column: 2/3;
+}
+
+/**** tekst toplisten ****/
+
+.tal {
+  grid-column: 1/2;
+  align-self: center;
+}
+
+.tal_sort {
+  grid-column: 1/2;
+  align-self: center;
+  color: black;
+}
+
+.hvid_teskt5 {
+  color: white;
+  line-height: 1.5rem;
+  grid-column: 4/8;
+  margin-right: 4rem;
+}
+
+.sort_tekst {
+  color: black;
+  line-height: 1.5rem;
+  grid-column: 4/8;
+  margin-right: 4rem;
+}
+/**** toplisten slut *****/
+/***** VORES ANMENDELSER *****/
+
+.gron_grid_venstre {
+  background-color: #d5dab1;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.gron_grid_hojre {
+  background-color: #d5dab1;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.gron_grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/****** anmendelser tekst *****/
+.tekst1 {
+  margin-right: 2rem;
+  margin-left: 0.5rem;
+  line-height: 1.3rem;
+}
+
+.tekst2 {
+  margin-right: 2rem;
+  line-height: 1.3rem;
+}
+
+.tekst3 {
+  margin-left: 2rem;
+  line-height: 1.3rem;
+}
+
+.tekst4 {
+  margin-left: 2rem;
+  line-height: 1.3rem;
+}
+
+/**** anmendelser billeder ****/
+.billede9 {
+  width: 150px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+/****** ANMENDELSER SLUT ******/
+/****** INSPIRATION ***********/
+
+.inspiration {
+  background-color: #cabeb2;
+  padding-top: 1rem;
+}
+
+.farvet_rakke {
+  background-color: #bd9a91;
+}
+
+/***** tekst ******/
+.h2_rakke {
+  padding-top: 2rem;
+}
+
+.h2_rakke_2 {
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/**** billeder inspiration *****/
+.billede_rakke {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 3.5rem;
+  justify-content: center;
+}
+
+/******* slut inspiration *********/
+/******* DESKTOP VERSION FORSIDE *******/
+@media (min-width: 800px) {
+  .forside_grid_1_2 {
+    gap: 50px;
+  }
+  .hvid_tekst {
+    padding-left: 10rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .forside_grid_1 {
+    background-color: #b17c80;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  .billede1 {
+    width: 150px;
+  }
+  .intro_overskrift {
+    font-size: 3.5rem; /* større overskrift */
+    padding-bottom: 2rem;
+  }
+  .intro_overskrift2 {
+    font-size: 3rem;
+  }
+  .hvid_tekst {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  /****om os****/
+  .forside_grid_2 {
+    display: flex;
+  }
+
+  .billede2 {
+    background-repeat: no-repeat;
+  }
+
+  .forside_grid_2_2 {
+    margin-bottom: 2rem;
+  }
+
+  .hvid_tekst2 {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .h2_overskrift {
+    font-size: 1.8rem;
+  }
+  /**** onskelisten *****/
+  .desktop_only {
+    display: block;
+  }
+
+  .onskeliste {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .onskeliste_tekst {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .forside_grid_3_1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  /**** fællesskab ****/
+  .forside_grid_4_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; /* Centrer lodret */
+    justify-items: center; /* Centrer hvert billede i sin kolonne */
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding: 4rem;
+  }
+
+  .billede6 {
+    max-width: 500px;
+  }
+
+  /**** månedens bog *****/
+  .bog_grid_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .billede6 {
+    grid-column: 1/2;
+    max-width: 800px;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  /*** om forfatteren ****/
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  .bog_grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    align-items: stretch; /* sørger for at begge dele fylder højden */
+    width: 100%; /* lad containeren fylde forælderen */
+    min-height: 100vh; /* fyld mindst viewport-højden */
+    gap: 0; /* ingen mellemrum medmindre du vil */
+    margin: 0;
+    padding: 0;
+  }
+
+  .bog_grid_2_2 {
+    grid-area: text;
+    padding: 4rem; /* indrykning af tekst */
+    display: flex; /* her bruger vi flex på ITEM for centering */
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: flex-start; /* tekst til venstre */
+  }
+
+  .billede7 {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    display: block; /* fjerner inline-image hvide kant */
+    object-fit: cover; /* dækker hele området uden forvrængning */
+  }
+
+  .bog_overskrift {
+    text-align: center; /* centrér teksten */
+    width: 100%; /* sikrer at centreringen gælder hele linjen */
+    margin: 0 auto 1rem; /* auto = centrerer i containeren */
+    display: block; /* sørger for korrekt centrering */
+  }
+
+  .hvid_tekst3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    line-height: 1.6rem;
+  }
+
+  .hvid_tekst4 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    line-height: 1.6rem;
+  }
+
+  /**** grønne del fælleskab ****/
+
+  .bog_grid_3 {
+    width: 100%;
+    padding: 8rem;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+  }
+
+  /********** toplisten **********/
+  .h1_sort {
+    font-size: 2.5rem;
+  }
+
+  .billede8 {
+    width: 200px;
+  }
+  .hvid_teskt5 {
+    line-height: 1.6rem;
+    grid-column: 4/8;
+    margin-right: 10rem;
+    margin-left: -5rem;
+    align-self: center;
+  }
+
+  .sort_tekst {
+    line-height: 1.6rem;
+    grid-column: 4/8;
+    margin-right: 10rem;
+    margin-left: -5rem;
+    align-self: center;
+  }
+
+  .h2_sort {
+    font-size: 1.8rem;
+  }
+
+  /******** anmendelser *****/
+  .gron_grid_venstre {
+    margin-right: 20rem;
+    margin-left: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  .gron_grid_hojre {
+    margin-right: 8rem;
+    margin-left: 20rem;
+    margin-bottom: 6rem;
+  }
+
+  .h1_sort_2 {
+    font-size: 2.5rem;
+  }
+
+  .h4_sort {
+    font-size: 1.2rem;
+  }
+
+  .h2_sort_venstre {
+    font-size: 1.8rem;
+  }
+
+  .h2_sort_hojre {
+    font-size: 1.8rem;
+  }
+
+  /**** inspiration *****/
+  .bog1 {
+    width: 50%;
+  }
+
+  .billede_rakke {
+    align-items: center; /* Centrer lodret */
+    justify-items: center; /* Centrer hvert billede i sin kolonne */
+    column-gap: 10px;
+  }
+}
+
+/******/
+
+@media (min-width: 1300px) {
+  /******** anmendelser *****/
+  .gron_grid_venstre {
+    margin-right: 28rem;
+    margin-left: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  .gron_grid_hojre {
+    margin-right: 8rem;
+    margin-left: 28rem;
+    margin-bottom: 6rem;
+  }
+}
+
+/**** MAX *****/
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .forside_grid_1 {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  /******** anmendelser *****/
+  .gron_grid_venstre {
+    margin-right: 14rem;
+    margin-left: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .gron_grid_hojre {
+    margin-right: 4rem;
+    margin-left: 14rem;
+    margin-bottom: 6rem;
+  }
+}
+
+/** slut ***/
+
+@media (max-width: 800px) {
+  .hvid_tekst {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hvid_teskt5 {
+    margin-left: 0rem;
+  }
+  .sort_tekst {
+    margin-left: 0rem;
+  }
+}

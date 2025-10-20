@@ -1,0 +1,373 @@
+/******* Reset - rør ikke ***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/****** slut reset *******/
+
+/**** fonte ****/
+@font-face {
+  font-family: "cheerful";
+  src: url("../fonte/cheerful.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "stix";
+  src: url("../fonte/STIXTwoText-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "josefine";
+  src: url("../fonte/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***** menu ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #742a25;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header1 {
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.menu li {
+  /**** tekst i menu *****/
+  margin-right: 30px;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: lightgrey;
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+
+  dt {
+    margin-top: 1rem;
+    background-color: lightblue;
+    font-weight: bold;
+  }
+
+  .order_1 {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  dd {
+    margin-bottom: 1rem;
+    background-color: lightgreen;
+  }
+
+  dt {
+    margin-bottom: 1rem;
+    background-color: lightblue;
+  }
+}
+
+@media (min-width: 1000px) {
+  .menu li {
+    margin-right: 50px;
+  }
+}
+
+/**** burger menu ****/
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #742a25;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/**** knap ****/
+.knap {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #daa05a;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1rem;
+  font-family: "josefine";
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  box-shadow: 0 10px 10px rgba(137, 36, 53, 0.168);
+  text-align: center;
+
+  display: flex;
+  justify-content: center; /* centrerer vandret */
+  align-items: center; /* centrerer lodret (hvis containeren har højde) */
+
+  display: inline-block; /* så den kun fylder efter indholdet */
+  padding: 10px 20px; /* giver lidt luft omkring teksten */
+  margin: 20px auto;
+}
+
+.knap_container {
+  text-align: center;
+}
+
+.knap:hover {
+  background-color: #a5753b;
+}
+
+/****** overskrifter *******/
+h1 {
+  color: white;
+  text-align: center;
+  font-family: stix;
+}
+
+.h1_padding {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: black;
+}
+
+.h1_sort {
+  color: black;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.h1_sort_2 {
+  color: black;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: stix;
+}
+
+.h2_sort {
+  color: black;
+}
+
+.h2_sort_venstre {
+  color: black;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.h2_sort_hojre {
+  color: black;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: "cheerful";
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.h4_sort {
+  color: black;
+  text-align: left;
+  padding-bottom: 0.3rem;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.onskeliste_tekst {
+  margin-bottom: 1.5em;
+}
+
+.tal {
+  font-size: x-large;
+}
+
+.tal_sort {
+  font-size: x-large;
+}
+
+/***** tekst forside *****/
+.hvid_tekst {
+  color: white;
+}
+
+.hvid_tekst2 {
+  color: white;
+}
+
+/***** tekst månedens bog *****/
+.bog_h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+}
+
+.bog_h3 {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 900px) {
+  .bog_h1 {
+    font-size: 2.8rem;
+    margin-top: 3rem;
+  }
+
+  .bog_h3 {
+    font-size: 1.5rem;
+  }
+
+  .felleskab_tekst {
+    font-size: 1.5rem;
+  }
+}
+
+/**** TOPLISTEN ****/
+.toplisten {
+  background-color: #f4eee3;
+}
+
+/***** logo *****/
+.logo {
+  width: 500px;
+  height: auto;
+}
+/**** virker ikke?*****/
+
+/**** footer ****/
+.footer {
+  background-color: #daa05a;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.footer_tekst {
+  color: white;
+  text-align: center;
+}
